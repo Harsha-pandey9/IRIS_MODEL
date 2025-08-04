@@ -37,7 +37,7 @@ IRIES_MODEL/
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/Adarsh130/IRIES_MODEL.git
+git clone https://github.com/Harsha-pandey9/IRIS_MODEL.git
 cd IRIES_MODEL
 ```
 
@@ -89,8 +89,8 @@ The file `iris_clustering.ipynb` contains:
 
 ## 🧑‍💻 Author
 
-**Adarsh Paswan**  
-🔗 [GitHub Profile](https://github.com/Adarsh130)  
+** Harsha Pandey **  
+🔗 [GitHub Profile](https://github.com/harsha-pandey-399025234 )  
 📫 Reach out for suggestions or improvements!
 
 ## 📝 License
