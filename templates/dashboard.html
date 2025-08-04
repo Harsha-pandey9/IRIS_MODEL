@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iris Clustering Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #fcfffd, #dbeafe);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .img-title {
+      text-align: center;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    .back-link {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Iris Clustering Dashboard</h1>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='plots/elbow.png') }}" alt="Elbow Plot" class="img-fluid">
+        <p class="img-title">Elbow Method (Inertia vs K)</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='plots/pca.png') }}" alt="Silhouette Plot" class="img-fluid">
+        <p class="img-title">PCA</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='plots/clusterplot.png') }}" alt="Cluster Plot" class="img-fluid">
+        <p class="img-title">Cluster Visualization</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='plots/heatmap.png') }}" alt="Heatmap" class="img-fluid">
+        <p class="img-title">Feature Correlation Heatmap</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='plots/count_plot.png') }}" alt="Countplot" class="img-fluid">
+        <p class="img-title">Cluster Distribution</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='plots/Distribution.png') }}" alt="Distplot" class="img-fluid">
+        <p class="img-title">Petal Width Distribution</p>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="/">⬅ Back to Prediction</a>
+    </div>
+  </div>
+</body>
+</html>
