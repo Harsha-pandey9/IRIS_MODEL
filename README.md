@@ -90,7 +90,7 @@ The file `iris_clustering.ipynb` contains:
 ## 🧑‍💻 Author
 
 ** Harsha Pandey **  
-🔗 [GitHub Profile](https://github.com/harsha-pandey-399025234 )  
+🔗 [GitHub Profile](https://github.com/harsha-pandey9)  
 📫 Reach out for suggestions or improvements!
 
 ## 📝 License
